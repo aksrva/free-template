@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+h2 {
+  text-transform: uppercase;
+}
+nav {
+  background-color: rgb(247, 245, 245);
+  height: 70px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: bold;
+}
+header {
+  background-color: #eee;
+  height: 100vh;
+}
+.free__wrapper {
+  width: 90%;
+  margin: auto;
+}
+.text__center {
+  text-align: center;
+}
+.free__flex {
+  display: flex;
+}
+.free__jsty__center {
+  justify-content: center;
+}
+.gap__2 {
+  gap: 2rem;
+}
+.free__align__center {
+  align-items: center;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.free__hero__txt {
+  width: 50%;
+}
+.free__hero__img,
+.promo__img {
+  width: 500px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+.m__b__1 {
+  margin-bottom: 1rem;
+}
+.m__tb__2 {
+  margin: 2rem 0;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  place-items: center;
+}
+.card {
+  background-color: #eee;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.card__btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #eeeeee58;
+  opacity: 0;
+}
+.card:hover .card__btn {
+  opacity: 1;
+}
+.pricing {
+  flex-wrap: wrap;
+}
+.price__card {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  line-height: 40px;
+}
+.price__card:nth-child(2) {
+  order: 3;
+}
+.price__type {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.price__card ul {
+  list-style: none;
+}
+.price {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.price__btn a {
+  width: 80%;
+  height: 40px;
+  background-color: orangered;
+  line-height: 40px;
+}
+
+.free__btn {
+  padding: 10px;
+  background-color: rgb(22, 33, 11);
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.promo__btn {
+  background: rgb(1, 40, 46);
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer {
+  padding: 3rem 0;
+  margin: 2rem 0 0 0;
+  font-size: 13px;
+  background-color: #eee;
+}
+footer a {
+  color: orangered;
+}
+
+@media (max-width: 750px) {
+  .res__flx__dir__column {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .free__hero__img,
+  .promo__img {
+    width: 80%;
+  }
+  .free__hero__txt {
+    width: 100%;
+    text-align: center;
+  }
+  .promo__txt {
+    text-align: center;
+  }
+  .grid__3 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
